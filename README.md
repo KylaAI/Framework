@@ -154,4 +154,4 @@ Templates digunakan untuk sistem templating pada framework sehingga tidak perlu 
 
 ## License
 
-Released under MIT License - see the [License File](LICENSE) for details.
+Released under Apache-2.0 License - see the [License File](LICENSE) for details.
