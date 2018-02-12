@@ -28,6 +28,10 @@ class App
         $c = "\\Http\Controllers\\".ucfirst($c)."Controller";
         $c = new $c;
 
+        if(!method_exists($c, $m)){
+            die("Method ".$m." Tidak ditemukan");
+        }
+
         $slice = array_slice($seg,2);
         call_user_func_array([$c,$m],$slice);
 	}
