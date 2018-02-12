@@ -39,13 +39,13 @@ class Model
             $prep = DB::prepare($sql.$where);
             $data = (isset($this->whereData))?array_merge($data,$this->whereData):$data;
             $prep->execute($data);
-            $this->nulled();
+            $this->null_data();
         } catch (\PDOException $e) {
             echo $e->getMessage();
         }
         return $prep;
     }
-    public function nulled(){
+    public function null_data(){
         $this->sql = null;
         $this->select = null;
         $this->order = null;
