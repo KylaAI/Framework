@@ -152,3 +152,6 @@ Templates digunakan untuk sistem templating pada framework sehingga tidak perlu 
     <?php view($page,$parram);?>         
 ```
 
+## License
+
+Released under MIT License - see the [License File](LICENSE) for details.
