@@ -15,11 +15,11 @@ class Model
         $limit,
         $where,
         $whereData;
-    protected static $instance;
+    protected static $instance=[];
     public static function gi(...$p){
-        if(!static::$instance)
-            static::$instance = new static(...$p);
-        return static::$instance;
+        if(!isset(static::$instance[static::class]))
+            static::$instance[static::class] = new static(...$p);
+        return static::$instance[static::class];
     }
     public static function __callStatic($method, $param)
     {   
