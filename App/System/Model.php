@@ -54,12 +54,12 @@ class Model
         $this->whereData = null;
         return $this;
     }
-    public function where(array $data, $prefix = "AND"){
+    public function where(array $data, $prefix = "AND", $operator = '='){
         $sql = " WHERE ";
         $jml = count($data);
         $a= 1;
         foreach ($data as $key => $value) {
-            $sql .= $key.' = :w_'.$key.' ';
+            $sql .= $key.' '.$operator.' :w_'.$key.' ';
             if($a < $jml){
                 $sql .= $prefix.' ';
             }
