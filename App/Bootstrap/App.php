@@ -6,7 +6,7 @@ namespace Bootstrap;
 class App
 {
 	public static function run(){
-		require_once(BASEPATH.'App/Bootstrap/helper.php');
+        require_once(BASEPATH.'App/Bootstrap/helper.php');
         date_default_timezone_set("Asia/Jakarta");
         self::getClass(
             self::getSeg(
@@ -15,7 +15,7 @@ class App
         );
 	}
 	public static function getClass(String $r){
-		$seg = explode('/',$r);
+        $seg = explode('/',$r);
         $seg = array_filter($seg);
         define("SEGMENT",$seg);
 
