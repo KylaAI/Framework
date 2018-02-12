@@ -1,0 +1,238 @@
+* {
+    padding : 0;
+    margin : 0;
+    font-family: Helvetica;
+}
+p {
+    font-size: .8em;
+}
+a {
+    color : inherit;
+    text-decoration:  none;
+}
+header {
+    line-height: 7vh;
+    width : 100%;
+    /*background-color: rgba(53, 159, 224, .6);*/
+    /*background-color : rgba(17, 138, 219, .8);*/
+    background-color: rgba(54, 115, 237, .8);
+    color : #333;
+}
+h1.logo { 
+    font-size: 1.2em;
+}
+.container {
+    width : 90%;
+    margin : 0 auto;
+}
+.content {
+    height : 80vh;
+    overflow-y: scroll;
+    width : 79.7vw;
+    position: absolute;
+    left: 20vw;
+    padding : 30px 0;
+    box-sizing: content-box;
+    background-color: #f7f7f7;
+}
+.sidebar{
+    height: 93vh;
+    background-color: #222d32;
+    width : 20vw;
+    position: absolute;
+    box-sizing: border-box;
+}
+.menu-sidebar.title{
+    background-color: #1A2226;
+    border-left: 2px solid #1A2226;
+}
+.menu-sidebar.title:hover{
+    background-color: #1A2226;
+    border-left: 2px solid #1A2226;
+}
+.menu-sidebar {
+    color : rgba(255,255,255,.6);
+    display: block;
+    padding : 15px;
+    box-sizing: border-box;
+    border-left: 2px solid #222d32;
+}
+.menu-sidebar:hover, .active{
+    background-color: rgba(92, 110, 125,.2);
+    border-left: 2px solid #45a7e8;
+}
+
+.content h1{
+    font-size: 2em;
+    color : #333;
+    margin-bottom: 10px;
+}
+.box{
+    background-color: #fff;
+    width : 100%;
+    border-top: 2px solid rgba(125,125,125, 0.6);
+    border-radius: 1px;
+    margin-bottom : 20px;
+}
+.box-header {
+    color : #333;
+    font-size: 1em;
+    border-bottom: 1px solid rgba(125,125,125, 0.3);
+    padding : 10px;
+    box-sizing: content-box;
+}
+.box-body{
+    padding : 10px;
+}
+.table-content{
+    width : 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.grid-10, .grid-5, .grid-4, .grid-3, .grid-2, .grid-1{
+    box-sizing: border-box;
+    float : left;
+    padding : 5px;
+}
+.grid-10{
+    width : 100%;
+}
+.grid-9{
+    width : 90%;
+}
+.grid-8{
+    width : 80%;
+}
+.grid-7{
+    width : 70%;
+}
+.grid-6{
+    width : 60%;
+}
+.grid-5 {
+    width : 50%;
+}
+.grid-4{
+    width : 40%;
+}
+.grid-3{
+    width : 30%;
+}
+.grid-2{
+    width : 20%;
+}
+.grid-1 {
+    width : 10%;
+}
+.clear{
+    clear:both;
+}
+
+.form input, .table-content input{
+    padding: 5px;
+    border-radius: 2px;
+    border : 1px solid rgba(0,0,0,.2);
+}
+.form select{
+    padding : 5px;
+    background-color : #fff;
+    border : 1px solid rgba(0,0,0,0.2);
+}
+.form label{
+    font-weight: bold;
+    margin-bottom : 5px;
+    display: block;
+    font-size: 0.8em;
+}
+.table-content input{
+    width : 80%;
+}
+.form-field input{
+    width : 80%;
+}
+.form-field select{
+    width : 50%;
+}
+.form input[type=checkbox], .form input[type=radio]{
+    cursor: pointer;
+    width : 20px;
+    border : 1px solid rgba(0,0,0,0.2);
+    background-color: #fff;
+    margin :0 10px 5px;
+}
+.form-field {
+    margin-bottom : 20px;
+}
+
+.btn {
+    padding : 5px 15px;
+    border-radius: 2px;
+    background-color: #fff;
+    color : #333;
+    border : 1px solid rgba(0,0,0,0.2);
+    cursor: pointer;
+    margin-bottom : 20px;
+}
+.btn-danger{
+    background-color: rgba(255, 99, 99, 0.8);
+    color : #fff;
+    outline: none;
+    border : none;
+}
+.btn-primary{
+    background-color: rgba(23, 164, 234,0.8);
+    color : #fff;
+    outline: none;
+    border: none;
+}
+
+
+table, table tr, table tr td {
+    margin:0;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table-content {
+    font-size: .8em;
+}
+.table-content tr td, .table-content tr th{
+    padding:10px;
+    border:none;
+    border: 1px solid rgba(0,0,0,0.1);
+}
+.increment-number{
+    text-align: center;
+}
+.numeric{
+    width : 5%;
+}
+
+
+.login{
+    width : 100vw;
+}
+.title-login{
+    margin: 100px 0 25px 0 ;
+    text-align: center;
+}
+.title-login h1{
+    color : #333;
+}
+.box-login{
+    margin : 0 auto;
+    width : 400px;
+    border: 1px solid rgba(0,0,0,.2);
+    padding : 20px;
+    box-sizing: border-box;
+}
+.help-login{
+    text-align: center;
+    display: block;
+    margin-bottom: 20px;
+}
+.login-form input{
+    width : 95%;
+}
+.btn-login {
+    margin-left : 16vh;
+}
