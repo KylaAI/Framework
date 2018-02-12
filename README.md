@@ -2,9 +2,9 @@
 Framework ini adalah framework sederhana yang pada awalnya dibentuk khusus untuk memproses data pada sistem Kyla baik itu Telegram maupun Line. Seiring berjalannya waktu, framework ini mengalami banyak perubahan dan pada akhirnya kami berfokus untuk mengembangkan framework ini dalam project yang berbeda. Framework ini menggunakan konsep MVC(Model, Controller, View). Dengan konsep ini kita dapat menyelesaikan suatu proyek secara tim dengan fleksibel dimana front-end hanya mengurusi bagian tampilan dan back-en hanya mengurus proses data sebelum di tampilkan ke pengguna.
 
 ## Apa saja yang dibutuhkan
-..* PHP Versi >= 5.6 (Disarankan Versi &=7)
-..* Webserver Apache
-..* Pengetahuan dasar framework MVC
+- PHP Versi >= 5.6 (Disarankan Versi &=7)
+- Webserver Apache
+- Pengetahuan dasar framework MVC
 
 ## Installasi & Penggunaan
 Dalam penginstallan framework ini ada beberapa hal yang perlu diperhatikan. 
