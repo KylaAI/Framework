@@ -4,7 +4,6 @@ namespace System;
  *
  */
 use Helpers\DB;
-use Helpers\Singleton;
 class Model
 {
     protected
