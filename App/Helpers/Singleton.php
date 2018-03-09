@@ -1,12 +1,16 @@
 <?php
 namespace Helpers;
-trait Singleton{
-	private static $__instance;
+/**
+* Singleton
+*/
+trait Singleton
+{
+    private static $__instance = [];
 
-	public static function getInstance(...$param){
-		if(self::$__instance === null){
-			self::$__instance = new self(...$param);
-		}
-		return self::$__instance;
-	}
+    public function getInstance(...$p){
+        if(!isset(static::$__instance[static::class])){
+            static::$__instance[static::class] = new static(...$p);
+        }
+        return static::$__instance[static::class];
+    }
 }
