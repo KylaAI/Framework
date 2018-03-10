@@ -1,11 +1,5 @@
-<h1>Welcome Message</h1>
-<div class="grid-10">
-    <div class="box">
-        <div class="box-header">
-            Hello Wolrd
-        </div>
-	<div class="box-body">
-		Lorem Ipsum
-	</div>
-    </div>
-</div>
+<h1>Kyla AI Framework</h1>
+<p>
+    Framework for build Kyla AI system. <br>
+    Fork me in github : <a href="https://github.com/KylaAI/Framework">KylaAI/Framework</a>
+</p>

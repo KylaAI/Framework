@@ -34,7 +34,7 @@ class App
 
         $c = (isset($seg[0]))?$seg[0]:'home';
         $m = (isset($seg[1]))?$seg[1]:'index';
-
+        define("CONTROLLER",((isset($seg[0]))?$seg[0]:''));
         $controller = "\\Http\Controllers\\".ucfirst($c)."Controller";
 
         if(!is_callable([$controller,$m])){
@@ -46,8 +46,8 @@ class App
         }
         try {
             call_user_func_array([$controller,$m], $slice);
-        } catch (Exception $e) {
-            echo $e->getMessage();
+        } catch (\ArgumentCountError $e) {
+            echo "<pre>Mohon untuk mengecek parameter pada controller</br>Error Messages: ".$e->getMessage()."</pre>";
         }
     }
 }
