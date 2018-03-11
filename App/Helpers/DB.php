@@ -16,7 +16,7 @@ class DB
 			$conf = Config::get('database');
 			$this->pdo = new \PDO('mysql:host='.$conf['host'].';dbname='.$conf['database'],$conf['username'],$conf['password'],[3=>2]);
 		} catch (\PDOException $e) {
-			echo $e->getMessages();
+			echo $e->getMessage();
 		}
 	}
 	public function clear(){
